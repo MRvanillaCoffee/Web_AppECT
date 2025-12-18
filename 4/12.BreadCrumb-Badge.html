@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BreadCrumb</title>
-    
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
         <!-- สร้าง BreadCrumb -->
-        <ol>
-            <li>สินค้า</li> 
-            <li>เฟอร์นิเจอร์</li>
-            <li>โซฟา</li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">สินค้า</li> 
+            <li class="breadcrumb-item">เฟอร์นิเจอร์</li>
+            <li class="breadcrumb-item active">โซฟา</li>
         </ol>
         <br>
 
         <!-- แบบ Link -->
-        <ol>
-            <li><a href="#">สินค้า</a></li>
-            <li><a href="#">เฟอร์นิเจอร์</a></li>
-            <li><a href="#">โซฟา</a></li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" >สินค้า</a></li>
+            <li class="breadcrumb-item"><a href="#" >เฟอร์นิเจอร์</a></li>
+            <li class="breadcrumb-item"><a href="#" >โซฟา</a></li>
         </ol>
         <br>
         
         <!-- Badge -->
-        <ul>
-            <li>สินค้าทั้งหมด<span>45</span></li>
-            <li>เฟอร์นิเจอร์<span>15</span></li>
-            <li>เครื่องใช้ไฟฟ้า<span>15</span></li>
-            <li>เครื่องสำอางค์<span>15</span></li>
+        <ul class="list-group">
+            <li  class="list-group-item d-flex justify-content-between">สินค้าทั้งหมด
+                <span class="badge bg-success">45</span></li>
+            <li class="list-group-item d-flex justify-content-between">เฟอร์นิเจอร์
+                <span class="badge bg-primary">15</span></li>
+            <li class="list-group-item d-flex justify-content-between">เครื่องใช้ไฟฟ้า
+                <span class="badge bg-danger">15</span></li>
+            <li class="list-group-item d-flex justify-content-between">เครื่องสำอางค์
+                <span class="badge bg-warning">15</span></li>
         </ul>
     </div>
 </body>
