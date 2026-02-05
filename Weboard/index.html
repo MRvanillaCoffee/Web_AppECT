@@ -52,26 +52,41 @@
                 </div>
             </div>
     
-            <table class="table table-striped mt-4">
+            <table class="table table-striped mt-4 ">
                 <tr>
-                    <td>
-                        [ เรื่องเรียน ] <a href="post.html" style="text-decoration: none;"> พิมพ์โปรแกรมตามอาจารย์ไม่ทันเลย</a>
-                        <br>
-                        pollakrit - 2025-07-28 17:46:32
+                    <td class="d-flex justify-content-between">
+                        <div>
+                            [ เรื่องเรียน ] <a href="post.html" style="text-decoration: none;"> พิมพ์โปรแกรมตามอาจารย์ไม่ทันเลย</a>
+                            <br>
+                            pollakrit - 2025-07-28 17:46:32
+                        </div>
+                        <div class="align-self-center me-4">
+                            <a href="#" class="btn btn-danger btn-sm" onclick="return del()"><i class="bi bi-trash"></i></a>
+                        </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        [ เรื่องเรียน ] <a href="post.html" style="text-decoration: none;"> ท่าทางจะรีไทร์ไปขอเกรดกับใครดี</a>
-                        <br>
-                        harry - 2025-07-22 19:25:06
+                    <td class="d-flex justify-content-between">
+                        <div>
+                            [ เรื่องเรียน ] <a href="post.html" style="text-decoration: none;"> ท่าทางจะรีไทร์ไปขอเกรดกับใครดี</a>
+                            <br>
+                            harry - 2025-07-22 19:25:06
+                        </div>
+                        <div class="align-self-center me-4">
+                            <a href="#" class="btn btn-danger btn-sm" onclick="return del()"><i class="bi bi-trash"></i></a>
+                        </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        [ เรื่องทั่วไป ] <a href="post.html" style="text-decoration: none;">Onepiece อยู่ไหนว้าาาาาาาาาา</a>
-                        <br>
-                        luffy - 2025-07-10 09:12:45
+                    <td class="d-flex justify-content-between">
+                        <div>
+                            [ เรื่องทั่วไป ] <a href="post.html" style="text-decoration: none;">Onepiece อยู่ไหนว้าาาาาาาาาา</a>
+                            <br>
+                            luffy - 2025-07-10 09:12:45
+                        </div>
+                        <div class="align-self-center me-4">
+                            <a href="#" class="btn btn-danger btn-sm" onclick="return del()"><i class="bi bi-trash"></i></a>
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -82,5 +97,12 @@
         <footer class="text-center mt-4 mb-3 text-muted">
             <small>&copy; 2025 webboard of Thanakorn</small>
         </footer>
+
+        <script>
+            function del(){
+                let a = confirm("ต้องการจะลบจริงหรือไม่")
+                return a;
+            }
+        </script>
     </body>
 </html>

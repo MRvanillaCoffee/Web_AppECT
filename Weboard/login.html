@@ -41,7 +41,13 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="pwd" class="form-label">Password:</label>
-                                <input id="pwd" type="password" name="pwd" class="form-control" required>
+                                <div class="input-group">
+                                    <input id="pwd" type="password" name="pwd" class="form-control" required>
+                                    <span class="input-group-text btn btn-outline-secondary" onclick="Show_Hide_Password()">
+                                        <i class="bi bi-eye-fill" id="show_eye"></i>
+                                        <i class="bi bi-eye-slash-fill d-none" id="hide_eye"></i>
+                                    </span>
+                                </div>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button type="submit" class="btn btn-secondary btn-sm me-2">Login</button>
@@ -63,5 +69,27 @@
     <footer class="text-center mt-4 mb-3 text-muted">
         <small>&copy; 2025 webboard of Thanakorn</small>
     </footer>
+
+    <script>
+        function Show_Hide_Password(){
+            let pwd = document.getElementById('pwd')
+            let show_eye = document.getElementById('show_eye')
+            let hide_eye = document.getElementById('hide_eye')
+
+            hide_eye.classList.remove('d-none')
+            if(pwd.type === 'password'){
+                pwd.type = 'text';
+                show_eye.style.display='none'
+                hide_eye.style.display='block'
+            }
+            else{
+                pwd.type = 'password';
+                show_eye.style.display='block'
+                hide_eye.style.display='none'
+            }
+            
+
+        }
+    </script>
 </body>
 </html>
